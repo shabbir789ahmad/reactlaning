@@ -1,0 +1,56 @@
+
+.bg-tag{
+    background-color: rgb(216, 216, 216);
+    overflow: hidden;
+    
+}
+.tags-color{
+    background-color: rgb(228, 228, 228);
+}
+.tags-color:hover .round-icon{
+    background-color: #00151D;
+    color: #ffffff;
+}
+.d:hover{
+    border: 1px solid #00151D !important;
+}
+.comm h5{
+    font-weight: 700;
+}
+.comm p{
+    font-size: 1vw;
+    color: darkslategrey;
+    margin: .3%;
+}
+.round-icon{
+    padding: .9rem 1.6rem;
+    background-color: #D8D8D8;
+    border: 1px solid #00151D;
+    border-radius: 50%;
+    text-align: center;
+    margin-top: .6rem;
+}
+.add-image{
+    position: relative;
+}
+.add-image .image-text{
+    position: absolute;
+    top: 40%;
+    left: 55%;
+}
+.image-text p{
+ margin-left: 30%;
+ font-weight: 600;
+ margin-bottom: 0%;
+}
+.image-text h5{
+ 
+    font-weight: 700;
+}
+.image-text button{
+    padding: .8rem 1.3rem;
+    background-color:#00151D ;
+    border-radius: 0%;
+    margin-left: 13%;
+    color: #ffffff;
+}
