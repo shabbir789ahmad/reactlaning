@@ -1,5 +1,8 @@
 import React from "react";
 import Product from './Product';
+import Card from './Card';
+import Item from './Item';
+import Tag from './Tag';
 import { useState,useEffect } from "react";
 import {liked,product,top,view} from "./Data";
 export const Home=()=>{
@@ -38,7 +41,29 @@ export const Home=()=>{
       name:'Small',
     }
   ];
+const comment=[
 
+
+        {
+          id:'1',
+          tag:"Very Good Product",
+          img:'/xproduct_3.png.pagespeed.ic.jCfub0gA7s.webp',
+          comment:'this is the best product i have seen i am fully satisfied with the quality price and plus behavour this is the best product i have seen i am fully satisfied with the quality price and plus behavour this is the best product i have seen i am fully satisfied with the quality price and plus behavour'
+        },
+        {
+          id:'1',
+          tag:"Realy Liked This Product",
+          img:'/xproduct_3.png.pagespeed.ic.jCfub0gA7s.webp',
+          comment:'this is the best product i have seen i am fully satisfied with the quality price and plus behavour this is the best product i have seen i am fully satisfied with the quality price and plus behavour this is the best product i have seen i am fully satisfied with the quality price and plus behavour'
+        },
+        {
+          id:'1',
+          tag:"Amazing Product",
+          img:'/xproduct_3.png.pagespeed.ic.jCfub0gA7s.webp',
+          comment:'this is the best product i have seen i am fully satisfied with the quality price and plus behavour this is the best product i have seen i am fully satisfied with the quality price and plus behavour this is the best product i have seen i am fully satisfied with the quality price and plus behavour'
+        }
+
+]
   const lists=[
      
     {
@@ -145,10 +170,7 @@ return(
 
  {/* what people say */}
  <div className="container p-0">
-   <div className="title_review">
-     <p>Client Reviews</p>
-     <h6>Our Top Product</h6>
-   </div>
+   <Tag tag={"Top Product"} heading={"Our Top Product"} />
    <ul className="list_item_product">
      {lists.map(list=>(
     <Product name={list.list} id={list.id}  active={selected===list.id} setSelected={setSelected} />
@@ -163,25 +185,7 @@ return(
      
 
      {data.map(pro=>(
-        <div className="col-md-3">
-
-        <div className="card shadow card_zoom mt-4">
-           <div className="card-body card_style p-0">
-             <div className="product_image">
-               <img src={pro.img} width="100%" height="300rem" />
-               <p className="sale">Sale</p>
-               <div className="cart_wish">
-               <p className="cart"><i className="fas fa-shopping-cart"></i></p>
-               <p className="wish" ><i className="fas fa-heart"></i></p>
-               </div>
-             </div>
-             <div className="product_tile">
-             <h6>{pro.name}</h6>
-             <h6>{pro.price}</h6>
-             </div>
-          </div>
-        </div>
-        </div>
+        <Item price={pro.price} name={pro.name} img={pro.img} />
 
      ))};
      
@@ -190,29 +194,17 @@ return(
 
   {/* what people say */}
  <div className="container p-0">
-   <div className="title_review">
-     <p>Client Reviews</p>
-     <h6>What Client Says About Us</h6>
-   </div>
+ <Tag tag={"Client Reviews"} heading={"What Client Says"} />
+   
 
    <div className="items">
      <div className="row">
-       <div className="col-md-4 p-0">
-         <div className="card shadow">
-           <div className="card-body card_style">
-             <i className="fa-thin fa-comment"></i>
-             <h4>very good product amazing</h4>
-             <p>this is the best product i have seen i am fully satisfied with the quality price and plus behavour this is the best product i have seen i am fully satisfied with the quality price and plus behavour this is the best product i have seen i am fully satisfied with the quality price and plus behavour </p>
-            <div className="user_detail">
-              <img src="logo192.png" />
-              <div className="name_city">
-              <h6>Shabbir Ahmad</h6>
-              <p>Lahore, Pakistan</p>
-              </div>
-            </div>
-           </div>
-         </div>
-       </div>
+       {comment.map(data=>(
+            
+           <Card tag={data.tag} comment={data.comment} img={data.img} />
+
+       ))}
+       
      </div>
    </div>
  </div>

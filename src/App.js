@@ -2,6 +2,7 @@
 import './App.css';
 import './css/Header.css';
 import './css/Banner.css';
+import "./css/Footer.css";
 import './css/Home.css';
 import Header from "./myComponent/Header";
 import About from "./myComponent/About";
@@ -21,6 +22,7 @@ function App() {
        <Route path="/about" element={<About />} />
        <Route path="/*" element={<ErrorPage />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
     
     </>
