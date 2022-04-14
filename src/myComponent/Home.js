@@ -8,38 +8,44 @@ import {liked,product,top,view} from "./Data";
 export const Home=()=>{
   const [selected, setSelected]=useState("liked");
   const [data ,setData]=useState([]);
-  const samllImage=[
+  
 
-    {
-      id:'1',
-      img:'/xproduct_1.png.pagespeed.ic.DvPBG5vxas.webp',
-    },{
-      id:'2',
-      img:'/xproduct_10.png.pagespeed.ic.69mYA3FDZH.webp',
-    },{
-      id:'3',
-      img:'/xproduct_3.png.pagespeed.ic.jCfub0gA7s.webp',
-    }
-  ];
-
-
-  const sizes=[
+  const topCollecttion=[
      
     {
-      id:'sm',
-      size:'S',
-      name:'Large',
+      id:'1',
+      top:'Top Collection',
+      name:'Womens Wear',
+      img:"woman-4702060_960_720.webp"
     },
     {
-      id:'md',
-      size:'M',
-      name:'Medium',
+      id:'1',
+      top:'Top Collection',
+      name:'Womens Wear',
+      img:"woman-4702060_960_720.webp"
+    },
+    
+  ];
+  const newetter=[
+     
+    {
+      id:'1',
+      h4:'New Best Trend In Town',
+      p:'this is the best product, this is the best product i have seen i am fully satisfied with the quality price and plus behavour',
+      img:"xproduct_1.png.pagespeed.ic.DvPBG5vxas.webp"
     },
     {
-      id:'lg',
-      size:'L',
-      name:'Small',
-    }
+      id:'1',
+      h4:'Trend Setter',
+      p:'this is the best product, this is the best product i have seen i am fully satisfied with the quality price and plus behavour ',
+      img:"xproduct_1.png.pagespeed.ic.DvPBG5vxas.webp"
+    },
+    {
+      id:'1',
+      h4:'Trend Setter',
+      p:'this is the best product, this is the best product i have seen i am fully satisfied with the quality price and plus behavour ',
+      img:"xproduct_1.png.pagespeed.ic.DvPBG5vxas.webp"
+    },
   ];
 const comment=[
 
@@ -123,48 +129,27 @@ return(
         </div>
      
   </header>
-  <div className="container-fluid">
-    <h5 className="classic">We Offer You The Best We Have</h5>
-  </div>
+ 
   <div className="container p-0 mt-5">
     <div className="row p-0">
-      <div className="col-md-6 p-0">
+
+      {topCollecttion.map(top=>(
+       
+       <div className="col-md-6 ">
         <figure className="figure">
-          <img src="banner-1.jpg" alt="image " />
-          <h6 className="h6">Men Wears</h6>
+          <img src={top.img} alt="image " className="rounded"  width="100%"/>
+          <p>{top.top}</p>
+          <h6 className="h6">{top.name}</h6>
+         
+             <button className="btn shop_now_btn"> Shop Now</button>
+           
         </figure>
       </div>
-      <div className="col-md-6">
-        <h4>Choose Your Desired Product</h4>
-        <div className="row mt-4">
-          {samllImage.map(img=>(
 
-               <div className="col-md-4 border border-secondary">
-                <img src={img.img} alt="image " className="image ml-2 "  />
-               </div>
-          ))}
-          
-        </div>
-        <div className="price mt-3">
-          <p className="p1">$12</p>
-          <p className="p2">$12</p>
-          <p className="p3">1% off</p>
-        </div>
-        
-        <div className="row">
-          {sizes.map(size=>(
 
-             <div className="col-md-3 mt-4">
-              <div className="sizes shadow" >
-               <h6>{size.size}</h6>
-               <p>{size.name}</p>
-             </div>
-            </div>
-          ))}
-        
-        </div>
-        <button className="btn btn-lg mt-4 button_style">Add to Cart</button>
-      </div>
+      ))}
+      
+      
     </div>
   </div>
 
@@ -191,6 +176,32 @@ return(
      
    </div>
    </div>
+
+   {/* what people say */}
+ <div className="container p-0">
+ <Tag tag={"News Alert"} heading={"Our Blogs"} />
+   
+
+   <div className="items">
+     <div className="row">
+        {newetter.map(data=>(
+            
+            <div className="col-md-4">
+         <div className="card">
+           <div className="card-body">
+             <h4>{data.h4}</h4>
+             <p>{data.p}</p>
+            <img src={data.img} className="rounded border" alt="image" width="100%" ></img>
+           </div>
+         </div>
+       </div>
+
+       ))} 
+      
+       
+     </div>
+   </div>
+ </div>
 
   {/* what people say */}
  <div className="container p-0">

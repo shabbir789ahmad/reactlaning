@@ -13,9 +13,17 @@
     margin-top: 20%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 .footer_list_item ul li{
     list-style: none;
     color: #fff;
+}
+.social_icon{
+    display: flex;
+    
+}
+.social_icon a{
+    color: #fff;
+    margin: 2%;
+    font-size: 2vw;
 }
