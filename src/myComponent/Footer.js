@@ -13,8 +13,8 @@ export const Footer=()=>{
                  <div className="social_icon">
                      <Link to="/" ><i class="fab fa-facebook-f"></i></Link>
                      <Link to="/" ><i class="fab fa-twitter"></i></Link>
-                     <Link to="/" ><i className="fas fa-heart"></i></Link>
-                     <Link to="/" ><i className="fas fa-heart"></i></Link>
+                     <Link to="/" ><i class="fab fa-google"></i></Link>
+                     <Link to="/" ><i class="fab fa-linkedin"></i></Link>
                  </div>
                </div>
            </div>
