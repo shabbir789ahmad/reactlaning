@@ -11,8 +11,8 @@ export const Footer=()=>{
                  <Link to="about" className="text-light nav-logo">mrDesign</Link>
                  <p>This is the best product i have seen i am fully satisfied with the quality price and plus behavour this is the best product </p>
                  <div className="social_icon">
-                     <Link to="/" ><i className="fas fa-facebook"></i></Link>
-                     <Link to="/" ><i className="fas fa-twitter"></i></Link>
+                     <Link to="/" ><i class="fab fa-facebook-f"></i></Link>
+                     <Link to="/" ><i class="fab fa-twitter"></i></Link>
                      <Link to="/" ><i className="fas fa-heart"></i></Link>
                      <Link to="/" ><i className="fas fa-heart"></i></Link>
                  </div>
