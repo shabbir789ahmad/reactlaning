@@ -32,19 +32,19 @@ export const Home=()=>{
       id:'1',
       h4:'New Best Trend In Town',
       p:'this is the best product, this is the best product i have seen i am fully satisfied with the quality price and plus behavour',
-      img:"xproduct_1.png.pagespeed.ic.DvPBG5vxas.webp"
+      img:"portrait-handsome-smiling-stylish-young-man-model-dressed-red-checkered-shirt-fashion-man-posing_158538-4909.webp"
     },
     {
       id:'1',
       h4:'Trend Setter',
       p:'this is the best product, this is the best product i have seen i am fully satisfied with the quality price and plus behavour ',
-      img:"xproduct_1.png.pagespeed.ic.DvPBG5vxas.webp"
+      img:"businessman-checking-time-from-watch_105092-104.webp"
     },
     {
       id:'1',
       h4:'Trend Setter',
       p:'this is the best product, this is the best product i have seen i am fully satisfied with the quality price and plus behavour ',
-      img:"xproduct_1.png.pagespeed.ic.DvPBG5vxas.webp"
+      img:"young-attractive-man-sunglasses-standing-blue-wall-background.jpg"
     },
   ];
 const comment=[
