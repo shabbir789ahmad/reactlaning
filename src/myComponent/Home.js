@@ -125,7 +125,7 @@ return(
            </div>
           </div>
         <div className="header_image">
-          <img src="xslider_1.jpg.pagespeed.ic.V9ovSIY03c.webp" alt="header image" width="100%" height="100%" />
+          <img src="portrait-handsome-smiling-stylish-young-man_158538-19391.webp" alt="header image" width="100%" height="100%" />
         </div>
      
   </header>
