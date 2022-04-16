@@ -6,7 +6,7 @@
 
 @media only screen and (min-width: 950px) 
 {
-.header_text_back{
+/*.header_text_back{
 
     width: 60%;
     position: absolute;
@@ -14,7 +14,7 @@
     background:linear-gradient(90deg,#3f83f8 0%, #3f83f8a6 40%, #0000ff00 80%, transparent 100%);
     top: 25%;
     left: 0%;
-}
+}*/
 .header_image{
     height: 100%;
     object-fit: cover;
@@ -22,7 +22,7 @@
 .header_text{
     position: absolute;
     top: 40%;
-    left: 7%;
+    right: 7%;
     width: 30%;
 }
 .header_text h6{

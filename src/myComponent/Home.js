@@ -118,8 +118,8 @@ return(
     
          <div className="header_text_back"></div>
          <div className="header_text">
-           <h6>Building a Better </h6>
-           <h5>Keep You Handsom </h5>
+           <h6>Mens Collection </h6>
+           <h5>Style Your Way </h5>
            <div className="button">
              <button className="btn"> Shop Now</button>
            </div>
