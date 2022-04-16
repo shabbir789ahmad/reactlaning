@@ -120,6 +120,7 @@ return(
          <div className="header_text">
            <h6>Mens Collection </h6>
            <h5>Style Your Way </h5>
+           <p>We Make You look Good </p>
            <div className="button">
              <button className="btn"> Shop Now</button>
            </div>
